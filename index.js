@@ -11,7 +11,7 @@ class Liquibase {
 	}
 
 	get command() {
-		let cmd = `java -jar ${this.params.liquibase}`;
+		let cmd = `${this.params.liquibase}`;
 		Object.keys(this.params).forEach(key => {
 			if (key === 'liquibase') {
 				return;
